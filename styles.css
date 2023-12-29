@@ -1,0 +1,96 @@
+body {
+    background-color: #0b0a1b;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #348693, #fd920a, #b62e15);
+    background-size: 100% 100%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+.nav_option:hover, .nav_option:active {
+    background-color: #f1ba00;
+}
+
+.main-container {
+    margin-top: 0px;
+    margin-bottom: 0px ;
+    height: 400px;
+    max-width: 100%;
+}
+
+.main-txt {
+    z-index: 1;
+    position: absolute;
+}
+
+.main-txt-h1 {
+    left: 5%;
+    top: 10%;
+}
+
+.main-txt-h3 {
+    left: 6%;
+}
+
+.ksv_background {
+    position: absolute;
+    height: 550px;
+    top: 8%;
+    left: 50%;
+    transform: rotate(15deg);
+}
+
+.joesley_logo {
+    height: 50px;
+}
+
+.white_text {
+    color: white;
+}
+
+.logos {
+    height: 100px;
+    border-radius: 10%;
+}
+
+.x_btn {
+    background-color: transparent;
+    border: 0px;
+}
+
+.member_card_l {
+    display: flex;
+    flex-direction: row;
+    background-color: #151540;
+    color: white;
+    padding: 20px;
+    border-radius: 3%;
+}
+
+.member_card_r {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #ef1837;
+    color: white;
+    padding: 20px;
+    border-radius: 3%;
+}
+
+.members_img_l {
+    height: 200px;
+    width: 150px;
+    border-radius: 5%;
+    float: left;
+}
+
+.members_img_r {
+    height: 200px;
+    width: 150px;
+    border-radius: 5%;
+    float: right;
+}
+
+#about_us, #sponsors {
+    background-color: #348693;
+}
