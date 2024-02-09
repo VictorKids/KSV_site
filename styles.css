@@ -77,6 +77,16 @@ body {
     border-radius: 3%;
 }
 
+.member_card_c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #8216BB;
+    color: white;
+    padding: 20px;
+    border-radius: 3%;
+}
+
 .members_img_l {
     height: 200px;
     width: 150px;
@@ -89,6 +99,19 @@ body {
     width: 150px;
     border-radius: 5%;
     float: right;
+}
+
+.members_img_c {
+    height: 200px;
+    width: 150px;
+    border-radius: 5%;
+    float: center;
+}
+
+.member_fav_pkm {
+    opacity: 0.5;
+    height: 200px;
+    overflow: hidden;
 }
 
 #about_us, #sponsors {
