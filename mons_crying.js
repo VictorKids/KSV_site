@@ -5,4 +5,4 @@ $(".member_fav_pkm").click( function(){
     audio.play();
 });
 
-$(".ksv_background").fadeIn(1000);
+$(".ksv_background").fadeOut(1000).fadeIn(1000);
