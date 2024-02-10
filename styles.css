@@ -53,6 +53,7 @@ body {
     color: white;
     padding: 20px;
     border-radius: 3%;
+    flex-wrap: wrap;
 }
 
 .member_card_r {
@@ -62,6 +63,7 @@ body {
     color: white;
     padding: 20px;
     border-radius: 3%;
+    flex-wrap: wrap;
 }
 
 .member_card_c {
@@ -72,6 +74,7 @@ body {
     color: white;
     padding: 20px;
     border-radius: 3%;
+    flex-wrap: wrap;
 }
 
 .members_img_l {
@@ -102,6 +105,7 @@ body {
     width: auto;
     height: auto;
     overflow: hidden;
+    margin: 10px;
 }
 
 #about_us, #sponsors, #results {
