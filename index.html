@@ -1,286 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KSV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/favicon.ico">
-</head>
-<body class="gradient-background">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body class="gradient-background">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
     <!--HEADER-->
     <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid bg-dark">
-            <header class="d-flex flex-wrap justify-content-center py-2 border-bottom">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <img src="./images/Joesley.png" class="joesley_logo" alt="Joesley, a capivara">
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#about_us" class="nav-link nav_option">About Us</a></li>
-                <li class="nav-item"><a href="#news" class="nav-link nav_option">News</a></li>
-                <li class="nav-item"><a href="#results" class="nav-link nav_option">Results</a></li>
-                <li class="nav-item"><a href="#members" class="nav-link nav_option">Members</a></li>
-                <li class="nav-item"><a href="#sponsors" class="nav-link nav_option">Sponsors</a></li>
-                <li class="nav-item"><a href="#footer" class="nav-link nav_option">Contact</a></li>
-            </ul>
-            </header>
+          <a
+            href="index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <img
+              src="./images/Joesley.png"
+              class="joesley_logo"
+              alt="Joesley, a capivara"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a href="#about_us" class="nav-link nav_option">About Us</a>
+              <a href="#news" class="nav-link nav_option">News</a>
+              <a href="#results" class="nav-link nav_option">Results</a>
+              <a href="#members" class="nav-link nav_option">Members</a>
+              <a href="#sponsors" class="nav-link nav_option">Sponsors</a>
+              <a href="#footer" class="nav-link nav_option">Contact</a>
+            </div>
+          </div>
         </div>
+      </nav>
     </section>
     <!--MAIN-->
     <section id="main">
       <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 text-center">
-              <h1 class="display-5 fw-bold  lh-1 my-5">Kymi Searing Vortex</h1>
-              <h3 class="mx-1 mb-5">A Pokémon VGC Team</h3>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <img src="./images/logo_KSV.png" class="ksv_background" alt="ksv logo">
-            </div>
+          <div class="col-sm-12 col-md-6 text-center d-flex flex-column justify-content-center">
+            <h1 class="display-5 fw-bold lh-1 my-5">Kymi Searing Vortex</h1>
+            <h3 class="mx-1 mb-5">A Pokémon VGC Team</h3>
           </div>
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="./images/logo_KSV.png"
+              class="ksv_background"
+              alt="ksv logo"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <!--ABOUT US-->
     <section id="about_us" class="border-top border-bottom">
-        <div class="container-fluid col-xxl-8 px-4 py-5 about_us_container">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-              <div class="col-10 col-sm-12 col-lg-6">
-                <img src="./images/members.jfif" class="aboutUs-img d-block mx-lg-auto img-fluid" style="border-radius: 10%;" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-              </div>
-              <div class=" col-sm-12 col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
-                <p class="lead white_text">Kymi Searing Vortex, known as KSV, is a Brazilian e-sports team founded in 2021 which is focused in the Pokémon Videogame Championships (VGC) circuit. We have players throughout Brazil that compete in national and international tournaments, leveraging our sponsorships to achieve the most consistent results within the Brazilian community.</p>
-              </div>
-            </div>
+      <div class="container-fluid col-xxl-8 px-4 py-5 about_us_container">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-12 col-lg-6">
+            <img
+              src="./images/members.jfif"
+              class="aboutUs-img d-block mx-lg-auto img-fluid"
+              style="border-radius: 10%"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
           </div>
+          <div class="col-sm-12 col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              About Us
+            </h1>
+            <p class="lead white_text">
+              Kymi Searing Vortex, known as KSV, is a Brazilian e-sports team
+              founded in 2021 which is focused in the Pokémon Videogame
+              Championships (VGC) circuit. We have players throughout Brazil
+              that compete in national and international tournaments, leveraging
+              our sponsorships to achieve the most consistent results within the
+              Brazilian community.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!--NEWS-->
     <section id="news">
       <div class="container p-0 pb-5">
-          <div class=" g-5 pt-5 pb-2  text-center">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">News</h1>
-              <p class=" lead white_text">some news and futhers goals we have to share.</p>
-          </div>
-          <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./images/news/news_lorenzo.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/news/news_regis_GO.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/news/news_joao.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <div class="g-5 pt-5 pb-2 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">News</h1>
+          <p class="lead white_text">
+            some news and futhers goals we have to share.
+          </p>
+        </div>
+        <div
+          id="carouselExampleAutoplaying1"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/news/news_lorenzo.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
+            <div class="carousel-item">
+              <img
+                src="./images/news/news_regis_GO.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/news/news_joao.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      </section>
+    </section>
     <!--RESULTS-->
     <section id="results" class="border-top border-bottom">
-    <div class="container  pb-5">
-        <div class=" g-5 pt-5 pb-2  text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Results</h1>
-            <p class=" lead white_text">by dedication and collaboration we can go each time further.</p>
+      <div class="container pb-5">
+        <div class="g-5 pt-5 pb-2 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Results
+          </h1>
+          <p class="lead white_text">
+            by dedication and collaboration we can go each time further.
+          </p>
         </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/vcl_champ.jfif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/laic_cut.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/curitiba_cut.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/sp_cut.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/natal_cut.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/samba_league.png" class="d-block w-100" alt="...">
-              </div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/vcl_champ.jfif"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <img
+                src="./images/laic_cut.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/curitiba_cut.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="images/sp_cut.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/natal_cut.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/samba_league.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
           </div>
-    </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
     <!--MEMBERS-->
-    <section id="members" class=" border-bottom">
-        <div class="container py-5">
-            <div class=" g-5 pt-5 pb-2 text-center">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Members</h1>
-                <p class=" lead white_text px-2">our capybaras.</p>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="member_card_l col-sm-12 col-md-6" id="rachik">
-                  <a href="https://twitter.com/RachikVGC"><img src="./images/members/Rachik 2.jpg" class="members_img_l" alt="Victor Rachik"></a>
-                    <div class="p-3 text-start">
-                      <h3>Victor Rachik</h3>
-                      <h4>Rachik</h4>
-                      <p>São Paulo - SP <br> From: São Paulo - SP</p>
-                    </div>
-                      <img src="./images/Primarina.png" id="primarina" class="member_fav_pkm" alt="Rachik's favorite pokemon">
-              </div>
-              <div class="member_card_r col-sm-12 col-md-6" id="caio">
-                <a href="https://twitter.com/PumpkinPhantom"><img src="./images/members/Caio 2.jpg" class="members_img_r" alt="Caio Romanini"></a>
-                <div class="p-3 text-end">
-                  <h3>Caio Romanini</h3>
-                  <h4>Phantom Pumpkin</h4>
-                  <p>Belo Horizonte - MG <br> From: Valinhos - SP</p>
-                </div>
-                <img src="./images/Pumpkaboo.png" id="pumpkaboo" class="member_fav_pkm" alt="Caio's favorite pokemon">
-              </div>
-              </div>
-              <div class="row">
-                <div class="member_card_l col-sm-12 col-lg-6" class="derek">
-                  <a href="https://twitter.com/Alphastorm42"><img src="./images/members/Derek 2.jpg" class="members_img_r" alt="Derek Ferreira"></a>
-                    <div class="p-3 text-start">
-                        <h3>Derek Ferreira</h3>
-                        <h4>Alphastorm</h4>
-                        <p>Manaus - AM <br> From: Manaus - AM</p>
-                    </div>
-                    <img src="./images/Raichu.png" id="raichu" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div>
-                <div class="member_card_r col-sm-12 col-md-6" id="jeff">
-                  <a href="https://twitter.com/Jefferson_ec"><img src="./images/members/Jeff.png" class="members_img_l" alt="Jefferson Camelo"></a>
-                    <div class="p-3 text-end">
-                        <h3>Jefferson Camelo</h3>
-                        <h4>lJeff</h4>
-                        <p>Pedro Leopoldo - MG <br> From: Pedro Leopoldo - MG</p>
-                    </div>
-                    <img src="./images/Flygon.png" id="flygon" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div>                
-              </div>
-              <div class="row">
-                <div class="member_card_l col-sm-12 col-md-6" id="henves">
-                  <a href="https://twitter.com/joaohcastrog"><img src="./images/members/Henves.jpg" class="members_img_r" alt="João Gonçalves"></a>
-                    <div class="p-3 text-start">
-                        <h3>João Gonçalves</h3>
-                        <h4>Henves</h4>
-                        <p>Belém - PA <br> From: Belém - PA</p>
-                    </div>
-                    <img src="./images/Articuno.png" id="articuno" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div>
-                <div class="member_card_r col-sm-12 col-md-6" id="joao">
-                  <a href="https://twitter.com/joaoschopfVGC"><img src="./images/members/schopf.jfif" class="members_img_l" alt="Joao Schopf"></a>
-                    <div class="p-3 text-end">
-                        <h3>João Schopf</h3>
-                        <h4>João do Sul</h4>
-                        <p>Porto Alegre - RS <br> From: Porto Alegre  -RS</p>
-                    </div>
-                    <img src="./images/Dragonite.png" id="dragonite" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div>
-              </div>
-              <div class="row">
-                <div class="member_card_l col-sm-12 col-md-6" id="lorenzo">
-                  <a href="https://twitter.com/DiTonetti"><img src="./images/members/lorenzo.jfif" class="members_img_r" alt="Lorenzo Tonetti"></a>
-                  <div class="p-3 text-start">
-                      <h3>Lorenzo Tonetti</h3>
-                      <h4>DiTonetti</h4>
-                      <p>São Carlos - SP <br> From: Belém - PA</p>
-                  </div>
-                  <img src="./images/Indeedee-Female.png" id="indeedee-f" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div> 
-                <div class="member_card_r col-sm-12 col-md-6" id="luciano">
-                  <a href="https://x.com/lucianobegot?s=20"><img src="./images/members/Luciano 2.jpg" class="members_img_r" alt="Luciano Begot"></a>
-                  <div class="p-3 text-end">
-                      <h3>Luciano Begot</h3>
-                      <h4>Stand Proud</h4>
-                      <p>Campinas - SP <br> From: Belém - PA</p>
-                </div>
-                <img src="./images/Corviknight.png" id="corviknight" class="member_fav_pkm" alt="Kids favorite pokemon">
-              </div>
-              </div>
-              <div class="row">
-                <div class="member_card_l col-sm-12 col-md-6" id="shiryu">
-                  <a href="https://twitter.com/GliscorsairVGC"><img src="./images/members/Shiryu_Cassemiro.jpg" class="members_img_l" alt="Rafael Cassemiro"></a>
-                    <div class="p-3 text-start">
-                        <h3>Rafael Cassemiro</h3>
-                        <h4>Gliscorsair</h4>
-                        <p>Campinas - SP <br> From: São Paulo - SP</p>
-                    </div>
-                    <img src="./images/Perrserker.png" id="perrserker" class="member_fav_pkm" alt="Rafael's favorite pokemon">
-                </div>
-                <div class="member_card_r col-sm-12 col-md-6" id="kids">
-                  <a href="https://twitter.com/VictorVKids"><img src="./images/members/kids.jfif" class="members_img_r" alt="Victor Vieira"></a>
-                    <div class="p-3 text-end">
-                        <h3>Victor Vieira</h3>
-                        <h4>Kids</h4>
-                        <p>Belo Horizonte - MG <br> From: Ipatinga - MG</p>
-                    </div>
-                    <img src="./images/Reshiram.png" id="reshiram" class="member_fav_pkm" alt="Kids favorite pokemon">
-                </div>       
-              </div>
-              <div class="member_card_c" id="ttar">
-                <a href="https://twitter.com/BrTtar"><img src="./images/members/TTar.jpg" class="members_img_l" alt="bruno Abdalla"></a>
-                  <div class="p-3">
-                      <h3>Bruno Abdalla</h3>
-                      <h4>BRTtar</h4>
-                      <p>Marialva - PR</p>
-                      <p>From: Matão - SP</p>
-                  </div>
-                  <img src="./images/Tyranitar.png" id="tyranitar" class="member_fav_pkm" alt="Kids favorite pokemon">
-              </div>
-            </div>
+    <section id="members" class="border-bottom">
+      <div class="container py-5">
+        <div class="g-5 pt-5 pb-2 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Members
+          </h1>
+          <p class="lead white_text px-2">our capybaras.</p>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="member-card member_card_l col-sm-12 col-md-6" id="rachik">
+              <a href="https://twitter.com/RachikVGC"
+                ><img
+                  src="./images/members/Rachik 2.jpg"
+                  class="members_img_l"
+                  alt="Victor Rachik"
+              /></a>
+              <div class="p-3 text-start">
+                <h3>Victor Rachik</h3>
+                <h4>Rachik</h4>
+                <p>
+                  São Paulo - SP <br />
+                  From: São Paulo - SP
+                </p>
+              </div>
+              <img
+                src="./images/Primarina.png"
+                id="primarina"
+                class="member_fav_pkm"
+                alt="Rachik's favorite pokemon"
+              />
+            </div>
+            <div class="member-card member_card_r col-sm-12 col-md-6" id="caio">
+              <a href="https://twitter.com/PumpkinPhantom"
+                ><img
+                  src="./images/members/Caio 2.jpg"
+                  class="members_img_r"
+                  alt="Caio Romanini"
+              /></a>
+              <div class="p-3 text-end">
+                <h3>Caio Romanini</h3>
+                <h4>Phantom Pumpkin</h4>
+                <p>
+                  Belo Horizonte - MG <br />
+                  From: Valinhos - SP
+                </p>
+              </div>
+              <img
+                src="./images/Pumpkaboo.png"
+                id="pumpkaboo"
+                class="member_fav_pkm"
+                alt="Caio's favorite pokemon"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="member-card member_card_l col-sm-12 col-lg-6" class="derek">
+              <a href="https://twitter.com/Alphastorm42"
+                ><img
+                  src="./images/members/Derek 2.jpg"
+                  class="members_img_r"
+                  alt="Derek Ferreira"
+              /></a>
+              <div class="p-3 text-start">
+                <h3>Derek Ferreira</h3>
+                <h4>Alphastorm</h4>
+                <p>
+                  Manaus - AM <br />
+                  From: Manaus - AM
+                </p>
+              </div>
+              <img
+                src="./images/Raichu.png"
+                id="raichu"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+            <div class="member-card member_card_r col-sm-12 col-md-6" id="jeff">
+              <a href="https://twitter.com/Jefferson_ec"
+                ><img
+                  src="./images/members/Jeff.png"
+                  class="members_img_l"
+                  alt="Jefferson Camelo"
+              /></a>
+              <div class="p-3 text-end">
+                <h3>Jefferson Camelo</h3>
+                <h4>lJeff</h4>
+                <p>
+                  Pedro Leopoldo - MG <br />
+                  From: Pedro Leopoldo - MG
+                </p>
+              </div>
+              <img
+                src="./images/Flygon.png"
+                id="flygon"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="member-card member_card_l col-sm-12 col-md-6" id="henves">
+              <a href="https://twitter.com/joaohcastrog"
+                ><img
+                  src="./images/members/Henves.jpg"
+                  class="members_img_r"
+                  alt="João Gonçalves"
+              /></a>
+              <div class="p-3 text-start">
+                <h3>João Gonçalves</h3>
+                <h4>Henves</h4>
+                <p>
+                  Belém - PA <br />
+                  From: Belém - PA
+                </p>
+              </div>
+              <img
+                src="./images/Articuno.png"
+                id="articuno"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+            <div class="member-card member_card_r col-sm-12 col-md-6" id="joao">
+              <a href="https://twitter.com/joaoschopfVGC"
+                ><img
+                  src="./images/members/schopf.jfif"
+                  class="members_img_l"
+                  alt="Joao Schopf"
+              /></a>
+              <div class="p-3 text-end">
+                <h3>João Schopf</h3>
+                <h4>João do Sul</h4>
+                <p>
+                  Porto Alegre - RS <br />
+                  From: Porto Alegre -RS
+                </p>
+              </div>
+              <img
+                src="./images/Dragonite.png"
+                id="dragonite"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="member-card member_card_l col-sm-12 col-md-6" id="lorenzo">
+              <a href="https://twitter.com/DiTonetti"
+                ><img
+                  src="./images/members/lorenzo.jfif"
+                  class="members_img_r"
+                  alt="Lorenzo Tonetti"
+              /></a>
+              <div class="p-3 text-start">
+                <h3>Lorenzo Tonetti</h3>
+                <h4>DiTonetti</h4>
+                <p>
+                  São Carlos - SP <br />
+                  From: Belém - PA
+                </p>
+              </div>
+              <img
+                src="./images/Indeedee-Female.png"
+                id="indeedee-f"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+            <div class="member-card member_card_r col-sm-12 col-md-6" id="luciano">
+              <a href="https://x.com/lucianobegot?s=20"
+                ><img
+                  src="./images/members/Luciano 2.jpg"
+                  class="members_img_r"
+                  alt="Luciano Begot"
+              /></a>
+              <div class="p-3 text-end">
+                <h3>Luciano Begot</h3>
+                <h4>Stand Proud</h4>
+                <p>
+                  Campinas - SP <br />
+                  From: Belém - PA
+                </p>
+              </div>
+              <img
+                src="./images/Corviknight.png"
+                id="corviknight"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="member-card member_card_l col-sm-12 col-md-6" id="shiryu">
+              <a href="https://twitter.com/GliscorsairVGC"
+                ><img
+                  src="./images/members/Shiryu_Cassemiro.jpg"
+                  class="members_img_l"
+                  alt="Rafael Cassemiro"
+              /></a>
+              <div class="p-3 text-start">
+                <h3>Rafael Cassemiro</h3>
+                <h4>Gliscorsair</h4>
+                <p>
+                  Campinas - SP <br />
+                  From: São Paulo - SP
+                </p>
+              </div>
+              <img
+                src="./images/Perrserker.png"
+                id="perrserker"
+                class="member_fav_pkm"
+                alt="Rafael's favorite pokemon"
+              />
+            </div>
+            <div class="member-card member_card_r col-sm-12 col-md-6" id="kids">
+              <a href="https://twitter.com/VictorVKids"
+                ><img
+                  src="./images/members/kids.jfif"
+                  class="members_img_r"
+                  alt="Victor Vieira"
+              /></a>
+              <div class="p-3 text-end">
+                <h3>Victor Vieira</h3>
+                <h4>Kids</h4>
+                <p>
+                  Belo Horizonte - MG <br />
+                  From: Ipatinga - MG
+                </p>
+              </div>
+              <img
+                src="./images/Reshiram.png"
+                id="reshiram"
+                class="member_fav_pkm"
+                alt="Kids favorite pokemon"
+              />
+            </div>
+          </div>
+          <div class="member-card member_card_c" id="ttar">
+            <a href="https://twitter.com/BrTtar"
+              ><img
+                src="./images/members/TTar.jpg"
+                class="members_img_l"
+                alt="bruno Abdalla"
+            /></a>
+            <div class="p-3">
+              <h3>Bruno Abdalla</h3>
+              <h4>BRTtar</h4>
+              <p>Marialva - PR</p>
+              <p>From: Matão - SP</p>
+            </div>
+            <img
+              src="./images/Tyranitar.png"
+              id="tyranitar"
+              class="member_fav_pkm"
+              alt="Kids favorite pokemon"
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <!--SPONSORS-->
     <section id="sponsors" class="border-top border-bottom">
-        <div class=" g-5 pt-5 pb-2 text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sponsors</h1>
-            <p class=" lead white_text">those who help us to live this dream.</p>
+      <div class="g-5 pt-5 pb-2 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sponsors</h1>
+        <p class="lead white_text">those who help us to live this dream.</p>
+      </div>
+      <div
+        class="d-flex flex-row gap-4 justify-content-center text-center pb-5"
+      >
+        <div>
+          <a href="https://x.com/kymi_esports?s=20"
+            ><img
+              src="./images/kymi.jpg"
+              class="logos pd-3"
+              alt="techcrunch logo"
+          /></a>
         </div>
-        <div class="d-flex flex-row gap-4 justify-content-center text-center pb-5">
-            <div>
-              <a href="https://x.com/kymi_esports?s=20"><img src="./images/kymi.jpg" class="logos pd-3" alt="techcrunch logo"></a>
-            </div>
-            <div>
-              <img src="./images/plz_pet_logo.jfif" class="logos pd-3" alt="business insider logo">
-            </div>
-          </div>
+        <div>
+          <img
+            src="./images/plz_pet_logo.jfif"
+            class="logos pd-3"
+            alt="business insider logo"
+          />
+        </div>
+      </div>
     </section>
     <!--FOOTER-->
-    <section id="footer"> 
-        <div class="container-fluid bg-dark">
-            <footer class="d-flex flex-column justify-content-between align-items-center gap-4 py-3 border-top">
-              <div class="d-flex gap-4">
-                <a href="#header" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                  <img src="./images/Joesley.png" class="joesley_logo" alt="ksv logo">
-                </a>
-                <a href="https://x.com/SearingVtx_VGC?s=20" class="x_btn " ><img src="./images/x.png" alt=""></a>
-              </div>
-              <p class="mb-0 white_text">© 2023 Victor Vieira</p>
-            </footer>
+    <section id="footer">
+      <div class="container-fluid bg-dark">
+        <footer
+          class="d-flex flex-column justify-content-between align-items-center gap-4 py-3 border-top"
+        >
+          <div class="d-flex gap-4">
+            <a
+              href="#header"
+              class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="./images/Joesley.png"
+                class="joesley_logo"
+                alt="ksv logo"
+              />
+            </a>
+            <a href="https://x.com/SearingVtx_VGC?s=20" class="x_btn"
+              ><img src="./images/x.png" alt=""
+            /></a>
           </div>
+          <p class="mb-0 white_text">© 2023 Victor Vieira</p>
+        </footer>
+      </div>
     </section>
     <div class="toTop">
       <a href="#header">^</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="mons_crying.js"></script>
-</body>
+  </body>
 </html>
