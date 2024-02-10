@@ -21,9 +21,11 @@ body {
 }
 
 .ksv_background {
-    display: none;
     transform: rotate(15deg);
-    height: 500px;
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    width: auto;
 }
 
 .joesley_logo {
@@ -95,7 +97,10 @@ body {
 
 .member_fav_pkm {
     opacity: 0.9;
-    height: 80px;
+    max-height: 80px;
+    max-width: 80px;
+    width: auto;
+    height: auto;
     overflow: hidden;
 }
 
