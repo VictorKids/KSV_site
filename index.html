@@ -21,6 +21,7 @@
             </a>
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#about_us" class="nav-link nav_option">About Us</a></li>
+                <li class="nav-item"><a href="#news" class="nav-link nav_option">News</a></li>
                 <li class="nav-item"><a href="#results" class="nav-link nav_option">Results</a></li>
                 <li class="nav-item"><a href="#members" class="nav-link nav_option">Members</a></li>
                 <li class="nav-item"><a href="#sponsors" class="nav-link nav_option">Sponsors</a></li>
@@ -31,24 +32,24 @@
     </section>
     <!--MAIN-->
     <section id="main">
-        <div class="container-fluid p-0">
-            <div class="position-relative overflow-hidden p-3 p-md-5  text-center  main-container">
-                <div class=" p-lg-5 mx-auto my-5">
-                <h1 class="main-txt main-txt-h1 display-3 fw-bold">Kymi Searing Vortex</h1>
-                <h3 class="main-txt main-txt-h3 fw-normal text-muted mb-3">A Pokémon VGC Team</h3>
-                <div class="d-flex gap-3 justify-content-center lead fw-normal">
-                </div>
-                </div>
-                <div class="product-device shadow-sm d-none d-md-block"><img class="ksv_background" src="./images/logo_KSV.png" alt="ksv logo"></div>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center">
+              <h1 class="display-5 fw-bold  lh-1 my-5">Kymi Searing Vortex</h1>
+              <h3 class="mx-1 mb-5">A Pokémon VGC Team</h3>
             </div>
-        </div>
+            <div class="col-sm-12 col-md-6">
+              <img src="./images/logo_KSV.png" class="ksv_background" alt="ksv logo">
+            </div>
+          </div>
+      </div>
     </section>
     <!--ABOUT US-->
     <section id="about_us" class="border-top border-bottom">
         <div class="container-fluid col-xxl-8 px-4 py-5 about_us_container">
             <div class="row flex-lg-row align-items-center g-5 py-5">
               <div class="col-10 col-sm-12 col-lg-6">
-                <img src="./images/members.jfif" class="d-block mx-lg-auto img-fluid" style="border-radius: 10%;" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                <img src="./images/members.jfif" class="aboutUs-img d-block mx-lg-auto img-fluid" style="border-radius: 10%;" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
               </div>
               <div class=" col-sm-12 col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
@@ -57,9 +58,39 @@
             </div>
           </div>
     </section>
+    <!--NEWS-->
+    <section id="news">
+      <div class="container p-0 pb-5">
+          <div class=" g-5 pt-5 pb-2  text-center">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">News</h1>
+              <p class=" lead white_text">some news and futhers goals we have to share.</p>
+          </div>
+          <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/news/news_lorenzo.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/news/news_regis_GO.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/news/news_joao.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+      </section>
     <!--RESULTS-->
-    <section id="results">
-    <div class="container p-0">
+    <section id="results" class="border-top border-bottom">
+    <div class="container  pb-5">
         <div class=" g-5 pt-5 pb-2  text-center">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Results</h1>
             <p class=" lead white_text">by dedication and collaboration we can go each time further.</p>
@@ -112,7 +143,7 @@
                       <h4>Rachik</h4>
                       <p>São Paulo - SP <br> De: São Paulo - SP</p>
                   </div>
-                  <img src="./images/Primarina.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                  <img src="./images/Primarina.png" id="primarina" class="member_fav_pkm" alt="Rachik's favorite pokemon">
               </div>
               <div class="member_card_r col-sm-12 col-md-6" id="caio">
                 <a href="https://twitter.com/PumpkinPhantom"><img src="./images/members/Caio 2.jpg" class="members_img_r" alt="Caio Romanini"></a>
@@ -121,7 +152,7 @@
                       <h4>Phantom Pumpkin</h4>
                       <p>Belo Horizonte - MG <br> De: Valinhos - SP</p>
                   </div>
-                  <img src="./images/Pumpkaboo.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                  <img src="./images/Pumpkaboo.png" id="pumpkaboo" class="member_fav_pkm" alt="Caio's favorite pokemon">
               </div>
               </div>
               <div class="row">
@@ -132,7 +163,7 @@
                         <h4>Alphastorm</h4>
                         <p>Manaus - AM <br> De: Manaus - AM</p>
                     </div>
-                    <img src="./images/Raichu.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Raichu.png" id="raichu" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>
                 <div class="member_card_r col-sm-12 col-md-6" id="jeff">
                   <a href="https://twitter.com/Jefferson_ec"><img src="./images/members/Jeff.png" class="members_img_l" alt="Jefferson Camelo"></a>
@@ -141,7 +172,7 @@
                         <h4>lJeff</h4>
                         <p>Pedro Leopoldo - MG <br> De: Pedro Leopoldo - MG</p>
                     </div>
-                    <img src="./images/Flygon.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Flygon.png" id="flygon" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>                
               </div>
               <div class="row">
@@ -152,7 +183,7 @@
                         <h4>Henves</h4>
                         <p>Belém - PA <br> De: Belém - PA</p>
                     </div>
-                    <img src="./images/Articuno.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Articuno.png" id="articuno" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>
                 <div class="member_card_r col-sm-12 col-md-6" id="joao">
                   <a href="https://twitter.com/joaoschopfVGC"><img src="./images/members/schopf.jfif" class="members_img_l" alt="Joao Schopf"></a>
@@ -161,7 +192,7 @@
                         <h4>João do Sul</h4>
                         <p>Porto Alegre - RS <br> De: Porto Alegre  -RS</p>
                     </div>
-                    <img src="./images/Dragonite.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Dragonite.png" id="dragonite" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>
               </div>
               <div class="row">
@@ -172,7 +203,7 @@
                       <h4>DiTonetti</h4>
                       <p>São Carlos - SP <br> De: Belém - PA</p>
                   </div>
-                  <img src="./images/Indeedee-Female.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                  <img src="./images/Indeedee-Female.png" id="indeedee-f" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div> 
                 <div class="member_card_r col-sm-12 col-md-6" id="luciano">
                   <a href="https://x.com/lucianobegot?s=20"><img src="./images/members/Luciano 2.jpg" class="members_img_r" alt="Luciano Begot"></a>
@@ -181,7 +212,7 @@
                       <h4>Stand Proud</h4>
                       <p>Campinas - SP <br> De: Belém - PA</p>
                 </div>
-                <img src="./images/Corviknight.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                <img src="./images/Corviknight.png" id="corviknight" class="member_fav_pkm" alt="Kids favorite pokemon">
               </div>
               </div>
               <div class="row">
@@ -192,7 +223,7 @@
                         <h4>Shiryu</h4>
                         <p>Campinas - SP <br> De: São Paulo - SP</p>
                     </div>
-                    <img src="./images/Perrserker.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Perrserker.png" id="perrserker" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>
                 <div class="member_card_r col-sm-12 col-md-6" id="kids">
                   <a href="https://twitter.com/VictorVKids"><img src="./images/members/kids.jfif" class="members_img_r" alt="Victor Vieira"></a>
@@ -201,7 +232,7 @@
                         <h4>Kids</h4>
                         <p>Belo Horizonte - MG <br> De: Ipatinga - MG</p>
                     </div>
-                    <img src="./images/Reshiram.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                    <img src="./images/Reshiram.png" id="reshiram" class="member_fav_pkm" alt="Kids favorite pokemon">
                 </div>       
               </div>
               <div class="member_card_c" id="ttar">
@@ -212,7 +243,7 @@
                       <p>Marialva - PR</p>
                       <p>De: Matão - SP</p>
                   </div>
-                  <img src="./images/Tyranitar.png" class="member_fav_pkm" alt="Kids favorite pokemon">
+                  <img src="./images/Tyranitar.png" id="tyranitar" class="member_fav_pkm" alt="Kids favorite pokemon">
               </div>
             </div>
         </div>
@@ -247,5 +278,7 @@
             </footer>
           </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="mons_crying.js"></script>
 </body>
 </html>

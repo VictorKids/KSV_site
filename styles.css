@@ -13,32 +13,17 @@ body {
 }
 
 .main-container {
+    display: flex;
     margin-top: 0px;
     margin-bottom: 0px ;
     height: 400px;
     max-width: 100%;
 }
 
-.main-txt {
-    z-index: 1;
-    position: absolute;
-}
-
-.main-txt-h1 {
-    left: 5%;
-    top: 10%;
-}
-
-.main-txt-h3 {
-    left: 6%;
-}
-
 .ksv_background {
-    position: absolute;
-    height: 550px;
-    top: 8%;
-    left: 50%;
+    display: none;
     transform: rotate(15deg);
+    height: 500px;
 }
 
 .joesley_logo {
@@ -109,11 +94,11 @@ body {
 }
 
 .member_fav_pkm {
-    opacity: 0.5;
-    height: 200px;
+    opacity: 0.9;
+    height: 80px;
     overflow: hidden;
 }
 
-#about_us, #sponsors {
+#about_us, #sponsors, #results {
     background-color: #348693;
 }
