@@ -1,5 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
+
+    height: fit-content;
     background-color: #0b0a1b;
+    position: relative;
 }
 
 .gradient-background {
@@ -7,6 +16,10 @@ body {
     background-size: 100% 100%;
     animation: gradient-animation 18s ease infinite;
   }
+
+.nav-link {
+    border-radius: 8px;
+}
 
 .nav_option:hover, .nav_option:active {
     background-color: #f1ba00;
@@ -46,24 +59,24 @@ body {
     border: 0px;
 }
 
+.member-card {
+    display: flex;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
 .member_card_l {
     display: flex;
     flex-direction: row;
     background-color: #151540;
-    color: white;
-    padding: 20px;
-    border-radius: 3%;
-    flex-wrap: wrap;
 }
 
 .member_card_r {
     display: flex;
     flex-direction: row-reverse;
     background-color: #ef1837;
-    color: white;
-    padding: 20px;
-    border-radius: 3%;
-    flex-wrap: wrap;
 }
 
 .member_card_c {
@@ -71,10 +84,6 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #8216BB;
-    color: white;
-    padding: 20px;
-    border-radius: 3%;
-    flex-wrap: wrap;
 }
 
 .members_img_l {
@@ -110,4 +119,25 @@ body {
 
 #about_us, #sponsors, #results {
     background-color: #348693;
+}
+
+.toTop {
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.toTop a{
+    color: white;
+    text-decoration: none;
 }
